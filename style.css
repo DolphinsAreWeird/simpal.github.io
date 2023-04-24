@@ -26,7 +26,7 @@ body {
 }
 #background1 {
   background-image: url("images/DFE0D4.png");
-  height: 88vh;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,16 +35,27 @@ body {
   font-size: large;
   margin-left: 20px;
   text-align: justify;
+  padding-top: 20vh;
+  padding-left: 250px;
 }
 #background2 {
-  background-image: url("images/smallermain.png");
-  height: 88vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+  overflow: hidden;
 }
-nav {
-  position: fixed;
+#background2 .img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* nav {
+  padding: 0 !important;
+  position: fixed !important;
+} */
+.products {
+  padding-left: 200px;
 }
 
 .navbar-brand {

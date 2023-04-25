@@ -3,21 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: #dfe0d4;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 
+/* header section */
 header {
   width: 101% !important;
   height: 100vh !important;
   padding: 0 10% !important;
   background-color: #dfe0d4;
 }
+
+/* main intro text */
 .text-area {
   padding-top: 250px;
   max-width: 400px;
@@ -36,6 +39,8 @@ header {
   background-color: #24262b;
   color: #dfe0d4;
 }
+
+/* image sizing */
 .user-area {
   position: absolute;
   top: 15%;
@@ -46,43 +51,34 @@ header {
   width: 700px;
   padding-top: 30px;
 }
-.column {
-  float: left;
-  width: 50%;
-  padding: 2px;
-}
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.card,
-#pop-title {
-  margin-left: 100px;
-}
+/* logo */
 .navbar-brand {
   font-weight: 500;
   color: #3e92a3;
   font-family: "Bruno Ace SC", cursive;
 }
-
-.nav-link {
-  font-family: sans-serif !important;
-  color: #353940 !important;
-  font-size: 18px !important;
-}
-.dropdown-item {
-  font-family: sans-serif !important;
-  color: #353940 !important;
-  font-size: 15px;
-}
-
 .logo {
   width: 20%;
   height: 20%;
 }
 
+/* navbar */
+.nav-link {
+  font-family: "Poppins", sans-serif !important;
+  color: #353940 !important;
+  font-size: 18px !important;
+}
+.dropdown-item {
+  font-family: "Poppins", sans-serif !important;
+  color: #353940 !important;
+  font-size: 15px;
+}
+#searchbar {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* scroll bar style */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -100,22 +96,17 @@ header {
   background-color: #a0a0a0;
 }
 
-body {
-  line-height: 1.5;
-  font-family: sans-serif;
-}
+/* popular items margin and cards */
+.card,
 #pop-title {
-  font-family: sans-serif;
+  margin-left: 100px;
 }
-
 .card {
   margin-top: 0;
 }
-
 svg {
   margin-right: 20px;
 }
-
 svg:hover {
   background-color: transparent;
   cursor: pointer;
@@ -132,6 +123,7 @@ svg:hover {
   margin-left: 63%;
 }
 
+/* feedback form */
 .feedback-form {
   width: 300px;
   margin: 0 auto;
@@ -144,14 +136,14 @@ svg:hover {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid #dfe0d4;
   border-radius: 4px;
 }
 
 .feedback-form input[type="submit"] {
   width: 100%;
-  background-color: #4caf50;
-  color: white;
+  background-color: #ff5335;
+  color: #dfe0d4;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -160,8 +152,10 @@ svg:hover {
 }
 
 .feedback-form input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #3e92a3;
 }
+
+/* footer */
 .container {
   max-width: 1170px;
   margin: auto;

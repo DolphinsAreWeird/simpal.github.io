@@ -50,8 +50,8 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
-.products {
-  padding-left: 200px;
+.carousel-item {
+  height: 50vh !important;
 }
 
 .navbar-brand {

@@ -1,9 +1,7 @@
 * {
-  /* height: 100%; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 html,
 body {
@@ -25,6 +23,7 @@ body {
   clear: both;
   display: table;
 }
+
 #background1 {
   background-image: url("images/DFE0D4.png");
   height: 50vh;
@@ -34,26 +33,28 @@ body {
   font-family: sans-serif;
   color: #353940;
   font-size: large;
-  margin-left: 20px;
+  margin-top: 20vh;
   text-align: justify;
   padding-top: 20vh;
-  padding-left: 250px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 #background2 {
-  padding-top: 10vh;
+  margin-top: 20vh;
+  padding-right: 100px;
   display: flex;
   justify-content: center;
-  height: 60vh;
+  height: 78vh;
 }
 #background2 .img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
 }
-.carousel-item {
-  height: 50vh !important;
+.card,
+#pop-title {
+  margin-left: 100px;
 }
-
 .navbar-brand {
   font-weight: 500;
   color: #3e92a3;
@@ -63,16 +64,12 @@ body {
 .nav-link {
   font-family: sans-serif !important;
   color: #353940 !important;
-  font-size: medium;
+  font-size: 18px !important;
 }
 .dropdown-item {
   font-family: sans-serif !important;
   color: #353940 !important;
-  font-size: smaller;
-}
-#popularitems {
-  padding-left: 35vh;
-  font-family: sans-serif;
+  font-size: 15px;
 }
 
 .logo {
@@ -101,7 +98,33 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
 }
+#pop-title {
+  font-family: sans-serif;
+}
 
+.card {
+  margin-top: 0;
+}
+
+svg {
+  margin-right: 20px;
+}
+
+svg:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+.typeA {
+  background-color: #ff5335;
+  color: white;
+}
+.typeA:hover {
+  background-color: #353940;
+  color: white;
+}
+.typeD {
+  margin-left: 63%;
+}
 .container {
   max-width: 1170px;
   margin: auto;

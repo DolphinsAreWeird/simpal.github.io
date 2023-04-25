@@ -12,6 +12,40 @@ body {
   background-color: #dfe0d4;
 }
 
+header {
+  width: 101% !important;
+  height: 100vh !important;
+  padding: 0 10% !important;
+  background-color: #dfe0d4;
+}
+.text-area {
+  padding-top: 250px;
+  max-width: 400px;
+  text-align: justify;
+}
+.text-area h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #3e92a3;
+}
+#button {
+  background-color: #ff5335;
+  color: #24262b;
+}
+#button:hover {
+  background-color: #24262b;
+  color: #dfe0d4;
+}
+.user-area {
+  position: absolute;
+  top: 15%;
+  right: 18%;
+}
+.user-area img {
+  display: block;
+  width: 700px;
+  padding-top: 30px;
+}
 .column {
   float: left;
   width: 50%;
@@ -22,34 +56,6 @@ body {
   content: "";
   clear: both;
   display: table;
-}
-
-#background1 {
-  background-image: url("images/DFE0D4.png");
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: sans-serif;
-  color: #353940;
-  font-size: large;
-  margin-top: 20vh;
-  text-align: justify;
-  padding-top: 20vh;
-  padding-right: 100px;
-  padding-left: 100px;
-}
-#background2 {
-  margin-top: 20vh;
-  padding-right: 100px;
-  display: flex;
-  justify-content: center;
-  height: 78vh;
-}
-#background2 .img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
 }
 .card,
 #pop-title {

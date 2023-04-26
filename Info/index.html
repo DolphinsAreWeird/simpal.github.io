@@ -3,19 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Simpal</title>
+
+<!-- links -->
     <link rel="icon" type="images/x-icon" href="./images/Logo-final.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro+Titling&family=Open+Sans:wght@600&family=Poppins&display=swap');
+      </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header>
+    <!-- nav bar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: #dfe0d4"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img src="./images/Logo-final.png" alt="" class="logo" />
+        <a class="navbar-brand" href="index.html">
+          <img src="../images/Logo-final.png" alt="" class="logo" />
           Simpal</a
         >
         <button
@@ -32,15 +48,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Info</a>
+              <a class="nav-link active" href="#">Info</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -58,6 +69,7 @@
                     >Upper Wear</a
                   >
                 </li>
+                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="../LowerWear/index.html"
                     >Lower Wear</a
@@ -66,22 +78,89 @@
               </ul>
             </li>
           </ul>
-
-          <form class="d-flex" role="search">
+<!-- search bar -->
+          <form class="d-flex justify-content-end" role="search" id="searchbar">
             <input
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            <button class="btn btn-outline-dark"
+            style="background-color:#ff5335"
+             type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
-    This is Info section.
+  </header>
+  <div class="container" id="info-text">
+    <h3>Note</h3>
+    <p> Welcome to our e-commerce website! 
+      Please note that the items listed on our site are not legitimate and the site is created solely for educational purposes as a school project. 
+      We are proud to say that this website is a collaborative effort between three students, and we have utilized the latest technologies to make it as seamless and efficient as possible. 
+      Some of the content on our website is AI-generated, which adds an exciting dimension to the user experience. 
+      Despite not being a legitimate e-commerce website, we hope that you will enjoy browsing our products and using the site as a learning tool for e-commerce fundamentals.</p>
+      
+      <p>As students, we took some references from online resources for our work including ChatGPT, Bing and even Google's Bard for our content writing works.
+      We also relied on <a href="https://youtu.be/YOb67OKw62s">this channel's </a>design for our footer section. 
+      We might have a lot of blank links in the buttons as this is still a micro project.
+      Never the less, we put in a lot of effort for our first project and we hope you enjoy our work.
+      Thank you for visiting!</p>
+  </div>
+
+
+  
+  
+
+<!-- footer -->
+      <footer class="footer">
+         <div class="container">
+           <div class="row">
+             <div class="footer-col">
+               <h4>company</h4>
+               <ul>
+                 <li><a href="#">about us</a></li>
+                 <li><a href="#">our services</a></li>
+                 <li><a href="#">privacy policy</a></li>
+                 <li><a href="#">affiliate program</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>get help</h4>
+               <ul>
+                 <li><a href="#">FAQ</a></li>
+                 <li><a href="#">shipping</a></li>
+                 <li><a href="#">returns</a></li>
+                 <li><a href="#">order status</a></li>
+                 <li><a href="#">payment options</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>online shop</h4>
+               <ul>
+                 <li><a href="UpperWear/index.html">Upper Wear</a></li>
+                 <li><a href="LowerWear/index.html">Lower Wear</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+             </div>
+           </div>
+         </div>
+      </footer>
+    
+    
+    
+    </body>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+

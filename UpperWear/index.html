@@ -22,86 +22,76 @@
       <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg fixed-top"
-      style="background-color: #dfe0d4"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img src="./img/Logo-final.png" alt="" class="logo" />
-          Simpal</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Info/index.html">Info</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Categories
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="../UpperWear/index.html"
-                    >Upper Wear</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#">Lower Wear</a></li>
-              </ul>
-            </li>
-          </ul>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            class="bi bi-bag-plus-fill"
-            viewBox="0 0 16 16"
-            
+    <header>
+      <!-- nav bar -->
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        style="background-color: #dfe0d4"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/Logo-final.png" alt="" class="logo" />
+            Simpal</a
           >
-            <path
-              fill-rule="evenodd"
-              d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z"
-            />
-          </svg>
-          
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Info/index.html">Info</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="UpperWear/index.html"
+                      >Upper Wear</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="LowerWear/index.html"
+                      >Lower Wear</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+  <!-- search bar -->
+            <form class="d-flex justify-content-end" role="search" id="searchbar">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark"
+              style="background-color:#ff5335"
+               type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!-- 1st row -->
   <div class="row">
     <div class="col-3 py-3">

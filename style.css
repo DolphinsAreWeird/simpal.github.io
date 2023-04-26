@@ -297,22 +297,16 @@ ul {
     display: block;
   }
   img {
-    width: 100% !important;
-    margin: 5px;
-  }
-
-  .footer-col {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .text-area {
-    display: block;
-  }
-  img {
     width: 30% !important;
     height: 20%;
     margin: 5px;
+  }
+  .card {
+    position: relative;
+    width: 400px;
+    display: inline-block;
+  }
+  .footer-col {
+    width: 100%;
   }
 }

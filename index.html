@@ -28,7 +28,7 @@
     <!-- nav bar -->
     <nav
       class="navbar navbar-expand-lg fixed-top"
-      style="background-color: #dfe0d4"
+      style="background-color: var(--first-color)"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -79,6 +79,7 @@
               </ul>
             </li>
           </ul>
+          <img src="images/moon.png" alt="" id="icon">
           
 <!-- search bar -->
           <form class="d-flex justify-content-end" role="search" id="searchbar">
@@ -310,12 +311,20 @@
     
     
     
-    </body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
               <script>
-              new WOW().init();
+              var icon = document.getElementById("icon");
+              icon.onclick=function(){
+                document.body.classList.toggle("dark-mode");
+                if(document.body.classList.contains("dark-mode")){
+                  icon.src="images/sun.png";
+                }
+                else{
+                  icon.src="images/moon.png";
+                }
+                }
               </script>
   </body>
 </html>

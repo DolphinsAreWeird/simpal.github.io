@@ -6,10 +6,19 @@
 
 html,
 body {
-  background-color: #dfe0d4;
+  background-color: var(--first-color);
   font-size: 18px;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --first-color: #dfe0d4;
+  --second-color: #353940;
+}
+.dark-mode {
+  --first-color: #070601;
+  --second-color: #fff;
 }
 
 /* header section */
@@ -17,7 +26,13 @@ header {
   width: 101% !important;
   height: 100vh !important;
   padding: 0 10% !important;
-  background-color: #dfe0d4;
+  background-color: var(--first-color);
+}
+
+#icon {
+  margin-right: 15px;
+  width: 30px;
+  cursor: pointer;
 }
 
 /* main intro text */
@@ -25,6 +40,7 @@ header {
   padding-top: 250px;
   max-width: 400px;
   text-align: justify;
+  color: var(--second-color);
 }
 .text-area h1 {
   font-size: 50px;
@@ -33,11 +49,11 @@ header {
 }
 #button {
   background-color: #ff5335;
-  color: #24262b;
+  color: var(--second-color);
 }
 #button:hover {
   background-color: #24262b;
-  color: #dfe0d4;
+  color: var(--first-color);
 }
 
 /* image sizing */
@@ -66,7 +82,7 @@ header {
 /* navbar */
 .nav-link {
   font-family: "Poppins", sans-serif !important;
-  color: #353940 !important;
+  color: var(--second-color) !important;
   font-size: 18px !important;
 }
 .dropdown-item {
@@ -97,11 +113,12 @@ header {
 }
 
 /* popular items margin and cards */
-.card,
 #pop-title {
+  color: var(--second-color);
   margin-left: 100px;
 }
 .card {
+  margin-left: 100px;
   margin-top: 0;
 }
 svg {
@@ -116,7 +133,7 @@ svg:hover {
   color: white;
 }
 .typeA:hover {
-  background-color: #353940;
+  background-color: var(--second-color);
   color: white;
 }
 .typeD {
@@ -125,6 +142,9 @@ svg:hover {
 
 /* feedback form */
 
+.feedback-form {
+  color: var(--second-color);
+}
 .feedback-container {
   display: flex;
   flex-direction: row;
@@ -187,14 +207,14 @@ svg:hover {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #dfe0d4;
+  border: 2px solid var(--first-color);
   border-radius: 4px;
 }
 
 .feedback-form input[type="submit"] {
   width: 100%;
   background-color: #ff5335;
-  color: #dfe0d4;
+  color: var(--first-color);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -228,7 +248,7 @@ ul {
 }
 .footer-col h4 {
   font-size: 18px;
-  color: #dfe0d4;
+  color: #bbbbbb;
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -250,7 +270,7 @@ ul {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #dfe0d4;
+  color: var(--first-color);
   text-decoration: none;
   font-weight: 300;
   color: #bbbbbb;
@@ -258,7 +278,7 @@ ul {
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-  color: #dfe0d4;
+  color: var(--first-color);
   padding-left: 8px;
 }
 .footer-col .social-links a {
@@ -270,7 +290,7 @@ ul {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #dfe0d4;
+  color: var(--first-color);
   transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover {

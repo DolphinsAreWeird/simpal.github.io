@@ -24,6 +24,8 @@ body {
 
 .card {
   margin-top: 20vh;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 svg {
@@ -182,4 +184,27 @@ ul {
   .footer-col {
     width: 100%;
   }
+}
+/* scroll bar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}
+/* DARK MODE */
+#icon{
+  margin-left: 7.5px ;
+  width: 30px;
+  cursor: pointer;
 }

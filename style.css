@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  background-color: var(--first-color);
-  font-size: 18px;
-  line-height: 1.5;
-  font-family: "Poppins", sans-serif;
-}
-
 :root {
   --first-color: #dfe0d4;
   --second-color: #353940;
@@ -19,6 +11,14 @@ body {
 .dark-mode {
   --first-color: black;
   --second-color: #dfe0d4;
+}
+
+html,
+body {
+  background-color: var(--first-color);
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 
 /* header section */
@@ -49,23 +49,24 @@ header {
 }
 #button {
   background-color: #ff5335;
-  color: var(--second-color);
+  color: var(--first-color);
 }
 #button:hover {
-  background-color: #24262b;
-  color: var(--first-color);
+  width: 135px;
+  color: var(--second-color);
 }
 
 /* image sizing */
 .user-area {
   position: absolute;
-  top: 15%;
-  right: 18%;
+  top: 20%;
+  right: 20%;
 }
 .user-area img {
   display: block;
   width: 700px;
-  padding-top: 30px;
+  padding-top: 80px;
+  padding-left: 150px;
 }
 
 /* logo */
@@ -136,7 +137,7 @@ svg:hover {
   color: white;
 }
 .typeA:hover {
-  background-color: var(--second-color);
+  background-color: #353940;
   color: white;
 }
 .typeD {
@@ -226,7 +227,7 @@ svg:hover {
 }
 
 .feedback-form input[type="submit"]:hover {
-  background-color: #3e92a3;
+  color: var(--second-color);
 }
 
 /* footer */

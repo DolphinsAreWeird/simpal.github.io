@@ -4,15 +4,17 @@
     box-sizing: border-box;
   }
   
-  :root {
+:root {
     --first-color: #dfe0d4;
     --second-color: #353940;
+    --third-color: #fff;
   }
   .dark-mode {
-    --first-color: black;
+    --first-color: #202124;
     --second-color: #dfe0d4;
-    /* --third-color: #183958; */
+    --third-color: #585151;
   }
+
 
   html,
   body {
@@ -202,4 +204,8 @@ ul {
   margin-right  : 15px ;
   width: 30px;
   cursor: pointer;
+}
+.card-dk{
+  background-color: var(--third-color);
+  color: var(--second-color);
 }

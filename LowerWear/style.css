@@ -204,3 +204,7 @@ ul {
   width: 30px;
   cursor: pointer;
 }
+.card-dk{
+  background-color: var(--third-color);
+  color: var(--second-color);
+}

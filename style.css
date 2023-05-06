@@ -129,10 +129,10 @@ header {
   margin-top: 0;
 }
 
-.underline
+.underline{
   text-decoration : none;
-  color:var(--second-color);
- 
+  color: var(--second-color);
+}
 }
 .typeD {
   margin-left: 63%;

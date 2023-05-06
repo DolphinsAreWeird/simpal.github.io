@@ -128,20 +128,10 @@ header {
   margin-left: 100px;
   margin-top: 0;
 }
-svg {
-  margin-right: 20px;
-}
-svg:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
+
 .typeA {
-  background-color: #ff5335;
   color: white;
-}
-.typeA:hover {
-  background-color: #353940;
-  color: white;
+  text-decoration : none;
 }
 .typeD {
   margin-left: 63%;

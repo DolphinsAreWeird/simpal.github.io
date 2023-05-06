@@ -77,6 +77,9 @@
   .typeD {
   margin-left: 63%;
   }
+.card-logo {
+    margin-bottom: 7px;
+}
   /* footer */
 .container {
   max-width: 1170px;

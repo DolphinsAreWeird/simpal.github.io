@@ -342,3 +342,6 @@ ul {
   background-color: var(--third-color);
   color: var(--second-color);
 }
+.card-logo {
+    margin-bottom: 7px;
+  }

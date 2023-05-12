@@ -45,7 +45,8 @@
   }
   .dropdown-item {
     font-family: "Poppins", sans-serif !important;
-    color: #353940 !important;
+    color: var(--second-color) !important;
+    background-color: var(--third-color) !important;
     font-size: 15px;
   }
   #searchbar {

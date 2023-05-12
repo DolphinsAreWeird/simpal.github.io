@@ -130,7 +130,7 @@ header {
 }
 
 #pop-items {
-  height: 50vh;
+  height: 60vh;
 }
 
 .card {
@@ -145,7 +145,7 @@ header {
 }
 
 .card {
-  margin-left: 100px;
+  margin-left: 20px;
   margin-top: 0;
 }
 

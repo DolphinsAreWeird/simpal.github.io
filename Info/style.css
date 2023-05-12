@@ -72,6 +72,12 @@ header {
 #searchbar {
   font-family: "Poppins", sans-serif !important;
 }
+#searchbutton {
+  color: white;
+}
+#searchbutton:hover {
+  background-color: #353940 !important;
+}
 
 /* scroll bar style */
 ::-webkit-scrollbar {

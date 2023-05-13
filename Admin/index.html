@@ -38,6 +38,8 @@
       >
         <i class="fas fa-bars" style="color: white"></i>
       </button>
+      <!--Darkmode icon -->
+       <img src="../images/moon.png" id="icon">
       <!-- Navbar Search-->
       <form
         class="d-flex justify-content-end ms-auto me-0 me-md-3 my-2 my-md-0"
@@ -301,5 +303,17 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/datatables-simple-demo.js"></script>
+      <script>
+  var icon = document.getElementById("icon");
+  icon.onclick=function(){
+    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.contains("dark-mode")){
+      icon.src="../images/sun.png";
+    }
+    else{
+      icon.src="../images/moon.png";
+    }
+  }
+  </script>
   </body>
 </html>

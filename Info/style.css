@@ -9,7 +9,7 @@
   --second-color: #353940;
 }
 .dark-mode {
-  --first-color: black;
+  --first-color: #202124;
   --second-color: #dfe0d4;
 }
 
@@ -52,6 +52,9 @@ header {
   font-weight: 500;
   color: #3e92a3;
   font-family: "Bruno Ace SC", cursive;
+  
+ .navbar-brand:hover {
+  color: var(--second-color);
 }
 .logo {
   width: 10%;

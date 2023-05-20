@@ -66,6 +66,9 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
+.card-text{
+  font-family: 'Jost', sans-serif;
+}
 
 svg {
   margin-right: 20px;

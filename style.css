@@ -32,11 +32,6 @@ header {
   background-color: var(--first-color);
 }
 
-#icon {
-  margin-right: 15px;
-  width: 30px;
-  cursor: pointer;
-}
 
 /* main intro text */
 .text-area {
@@ -90,18 +85,21 @@ header {
 .nav-link {
   font-family: "Poppins", sans-serif !important;
   color: var(--second-color) !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
 }
 .dropdown-item {
   font-family: "Poppins", sans-serif !important;
   color: #353940 !important;
-  font-size: 15px;
+  font-size: 13px;
 }
 #searchbar {
   font-family: "Poppins", sans-serif !important;
+  width: auto;
+  height: 30px;
 }
 #searchbutton {
   color: white;
+  font-size: 15px;
 }
 #searchbutton:hover {
   background-color: #353940 !important;
@@ -150,6 +148,10 @@ header {
   margin-left: 20px;
   margin-top: 0;
 }
+/* .text{
+  font-family: 'Jost', sans-serif;
+}
+ */
 
 .underline {
   text-decoration: none;
@@ -263,14 +265,14 @@ ul {
 }
 .footer {
   background-color: #353940;
-  padding: 70px 0;
+  padding: 10px 0;
 }
 .footer-col {
   width: 25%;
   padding: 0 15px;
 }
 .footer-col h4 {
-  font-size: 18px;
+  font-size: 17px;
   color: #bbbbbb;
   text-transform: capitalize;
   margin-bottom: 35px;
@@ -291,7 +293,7 @@ ul {
   margin-bottom: 10px;
 }
 .footer-col ul li a {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: capitalize;
   color: var(--first-color);
   text-decoration: none;
@@ -352,6 +354,13 @@ ul {
   .footer-col {
     width: 100%;
   }
+}
+/* DARK MODE */
+
+#icon {
+  margin-right: 15px;
+  width: 30px;
+  cursor: pointer;
 }
 .card-dk {
   background-color: var(--third-color);

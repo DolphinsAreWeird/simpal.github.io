@@ -22,6 +22,7 @@ body {
   left: 0;
   right: 0;
   background-color: var(--first-color);
+  overflow-x: hidden;
 }
 /* logo */
 .navbar-brand {

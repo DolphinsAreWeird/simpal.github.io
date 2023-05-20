@@ -18,9 +18,10 @@
 html,
 body {
   background-color: var(--first-color);
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 /* header section */
@@ -44,10 +45,11 @@ header {
   text-align: justify;
   color: var(--second-color);
 }
-.text-area h1 {
+.text-area h4 {
   font-size: 50px;
   margin-bottom: 20px;
   color: #3e92a3;
+  font-family: "Kanit", sans-serif;
 }
 #button {
   background-color: #ff5335;
@@ -203,6 +205,7 @@ header {
   font-size: 18px;
   color: #ff5335;
   font-weight: bold;
+  font-family: "Kanit", sans-serif;
 }
 
 .feedback-text p {
@@ -212,6 +215,7 @@ header {
   max-height: calc(1.4rem * 6);
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 2;
 }
 
 .feedback-form {

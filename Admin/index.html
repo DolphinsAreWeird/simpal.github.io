@@ -1,321 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Dashboard - Simpal Admin</title>
-    <link rel="icon" type="images/x-icon" href="../images/Logo-final.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
-    ></script>
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro+Titling&family=Kanit:wght@300&family=Open+Sans:wght@600&family=Poppins&display=swap");
+    </style>
   </head>
-  <body class="sb-nav-fixed">
-    <nav
-      class="sb-topnav navbar navbar-expand"
-      style="background-color: #353940"
-    >
-      <!-- Navbar Brand-->
-      <a class="navbar-brand ps-3" style="color: white" href="index.html">
-        <img src="../images/Logo-final.png" alt="admin img" id="logo" />
-        Simpal</a
-      >
-      <!-- Sidebar Toggle-->
-      <button
-        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
-        id="sidebarToggle"
-        href="#!"
-      >
-        <i class="fas fa-bars" style="color: white"></i>
-      </button>
-      <!-- Navbar Search-->
-      <form
-        class="d-flex justify-content-end ms-auto me-0 me-md-3 my-2 my-md-0"
-        role="search"
-        id="searchbar"
-      >
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button
-          class="btn btn-outline-dark"
-          style="background-color: #ff5335"
-          type="submit"
-          id="searchbutton"
-        >
-          Search
-        </button>
-      </form>
-      
-      <!--Darkmode icon -->
-       <img src="../images/moon.png" id="icon">
-      <!-- Navbar-->
-      <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            id="navbarDropdown"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            ><i class="fas fa-user fa-fw" style="color: white"></i
-          ></a>
-          <ul
-            class="dropdown-menu dropdown-menu-end"
-            aria-labelledby="navbarDropdown"
-          >
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Activity Log</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+  <body>
+    <section id="main">
+      <!--   <div id="border"></div> -->
+      <div id="left">
+        <div id="nav-content">
+          <div id="nav-title">
+            <img src="../images/Logo-final.png" alt="logo" id="logo" />
+            <span>SIMPAL</span>
+          </div>
+          <ul id="nav-ul">
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-line-chart"></i></span>
+                <span class="nav-letter">Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-menu"></i></span>
+                <span class="nav-letter">Transaction</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-credit-card"></i></span>
+                <span class="nav-letter">Cards</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-file-blank"></i></span>
+                <span class="nav-letter">Invoice</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-medal"></i></span>
+                <span class="nav-letter">Goals</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-cog"></i></span>
+                <span class="nav-letter">Settings</span>
+              </a>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </nav>
-    <div id="layoutSidenav">
-      <div id="layoutSidenav_nav">
-        <nav
-          class="sb-sidenav accordion"
-          style="background-color: #353940"
-          id="sidenavAccordion"
-        >
-          <div class="sb-sidenav-menu">
-            <div class="nav">
-              <div class="sb-sidenav-menu-heading" style="color: white">
-                Core
-              </div>
-              <a class="nav-link" style="color: white" href="index.html">
-                <div class="sb-nav-link-icon">
-                  <i class="fas fa-tachometer-alt"></i>
-                </div>
-                Dashboard
-              </a>
-              <div
-                class="collapse"
-                id="collapsePages"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#sidenavAccordion"
-              >
-                <nav
-                  class="sb-sidenav-menu-nested nav accordion"
-                  id="sidenavAccordionPages"
-                >
-                  <a
-                    class="nav-link collapsed"
-                    href="#"
-                    style="color: white"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#pagesCollapseAuth"
-                    aria-expanded="false"
-                    aria-controls="pagesCollapseAuth"
-                  >
-                    Authentication
-                    <div class="sb-sidenav-collapse-arrow">
-                      <i class="fas fa-angle-down"></i>
-                    </div>
-                  </a>
-                  <div
-                    class="collapse"
-                    id="pagesCollapseAuth"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#sidenavAccordionPages"
-                  >
-                    <nav class="sb-sidenav-menu-nested nav">
-                      <a class="nav-link" href="login.html">Login</a>
-                      <a class="nav-link" href="register.html">Register</a>
-                      <a class="nav-link" href="password.html"
-                        >Forgot Password</a
-                      >
-                    </nav>
-                  </div>
-                  <a
-                    class="nav-link collapsed"
-                    href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#pagesCollapseError"
-                    aria-expanded="false"
-                    aria-controls="pagesCollapseError"
-                  >
-                    Error
-                    <div class="sb-sidenav-collapse-arrow">
-                      <i class="fas fa-angle-down"></i>
-                    </div>
-                  </a>
-                </nav>
-              </div>
-              <div class="sb-sidenav-menu-heading" style="color: white">
-                Addons
-              </div>
-              <a class="nav-link" style="color: white" href="charts.html">
-                <div class="sb-nav-link-icon">
-                  <i class="fas fa-chart-area"></i>
-                </div>
-                Charts
-              </a>
-            </div>
+        </div>
+        <div id="nav-bottom">
+          <div id="n-b-top">
+            <p>Logged&nbsp;in&nbsp;As: &nbsp;ADMIN 1</p>
           </div>
-          <div class="sb-sidenav-footer" style="color: white">
-            <div class="small">Logged in as:</div>
-            Admin
-          </div>
-        </nav>
+        </div>
       </div>
-
-      <div id="layoutSidenav_content">
-        <main>
-          <div class="container-fluid px-4">
-            <h1 class="mt-4">Dashboard</h1>
-            <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Dashboard</li>
-            </ol>
-            <div class="row">
-              <div class="col-xl-4 col-md-6">
-                <div class="card text-white mb-4"
-                style="background-color: #FF5335;">
-                  <div class="card-body">
-                    <h5>Current Users</h5>
-                    <div
-                      class="content align-items-center justify-content-between"
-                    >
-                      <i
-                        class="fa-solid fa-user"
-                        style="padding-right: 10px"
-                      ></i
-                      >6
+      <div id="right">
+        <div id="top">
+          <div id="tp-title">
+            <h1>Weekly sumup</h1>
+            <p>Get summary of your weekly online sales here.</p>
+          </div>
+          <div id="profile">
+            <span><i class="bx bx-mail-send mail"></i></span>
+            <span><i class="bx bxs-bell bell"></i></span>
+            <div id="profile-ac-name">
+              <i class="bx bxs-user-circle"></i>
+              <p><span>$$$$</span><br />Admin&nbsp;account</p>
+            </div>
+          </div>
+        </div>
+        <div id="main-content">
+          <div id="m-c-left">
+            <div id="card">
+              <h2>Cards</h2>
+              <div id="card-related">
+                <div class="card-amount">
+                  <div id="debit-card">
+                    <i class="bx bxs-cloud card-cloud"></i>
+                    <div id="d-c-title">
+                      <h4>Simpal Bank</h4>
+                      <span>PREMIUM ACCOUNT</span>
+                    </div>
+                    <h1 id="card-num">1234 **** **** 3456</h1>
+                    <div id="name-expire">
+                      <div id="holder">
+                        <p>Card holder</p>
+                        <p>M-Admin</p>
+                      </div>
+                      <div id="expire">
+                        <p>Expire date</p>
+                        <p>04/24</p>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  ></div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-md-6">
-                <div class="card text-white mb-4"
-                style="background-color: #3E92A3;">
-                  <div class="card-body">
-                    <h5>Revenue Today</h5>
-                    <div
-                      class="content align-items-center justify-content-between"
-                    >
-                      <i
-                        class="fa-solid fa-dollar-sign"
-                        style="padding-right: 10px"
-                      ></i
-                      >30 
+                  <div id="amount">
+                    <div class="amt-lst">
+                      <h1><span class="dollar">MMK</span>2850K</h1>
+                      <p>Current balance</p>
+                    </div>
+                    <div class="amt-lst">
+                      <p><span class="dollar">MMK</span>2000K</p>
+                      <p>Income</p>
+                    </div>
+                    <div class="amt-lst">
+                      <p><span class="dollar">MMK</span>1750K</p>
+                      <p>Outcome</p>
                     </div>
                   </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  ></div>
                 </div>
-              </div>
-              <div class="col-xl-4 col-md-6">
-                <div class="card text-white mb-4"
-                style="background-color: #353940;">
-                  <div class="card-body">
-                    <h5>Items Sold in 24 hrs</h5>
-                    <div
-                      class="content align-items-center justify-content-between"
-                    >
-                      <i
-                        class="fa-solid fa-shirt"
-                        style="padding-right: 10px"
-                      ></i
-                      >6
+                <div class="card-bottom">
+                  <div id="c-b-fst">
+                    <div id="line"></div>
+                    <div id="c-b-wpl">
+                      <p>Weekly payment limit</p>
+                      <p>1056K / 4000K</p>
                     </div>
                   </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  ></div>
-                </div>
-              </div>
-
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <i class="fas fa-chart-area me-1"></i>
-                    Sales (May)
-                  </div>
-                  <div class="card-body">
-                    <canvas id="myAreaChart" width="100%" height="40"></canvas>
+                  <div id="c-b-sec">
+                    <div id="on-btn"></div>
+                    <p>Deacivate card</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <i class="fas fa-chart-bar me-1"></i>
-                    Sales per Month
+            </div>
+            <div id="transaction-list">
+              <h2>Transaction</h2>
+              <table>
+                <tr>
+                  <td>Reciver</td>
+                  <td>Type</td>
+                  <td>Date</td>
+                  <td>Amount</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cargo
+                    Import
+                  </td>
+                  <td>Shopping</td>
+                  <td>04 Jul 2021</td>
+                  <td>MMK 500K</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fa fa-truck" aria-hidden="true"></i>Delivery Fees
+                  </td>
+                  <td>Extra Fees</td>
+                  <td>27 Jul 2021</td>
+                  <td>MMK 100K</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fa fa-leaf" aria-hidden="true"></i>Compensation
+                  </td>
+                  <td>Extra Fees</td>
+                  <td>14 Jul 2021</td>
+                  <td>MMK 100K</td>
+                </tr>
+                <tr>
+                  <td><i class="bx bx-user"></i>M-Admin</td>
+                  <td>Salary</td>
+                  <td>07 Jul 2021</td>
+                  <td>MMK 600K</td>
+                </tr>
+                <tr>
+                  <td><i class="bx bx-user"></i>Admin 1</td>
+                  <td>Salary</td>
+                  <td>05 Jul 2021</td>
+                  <td>MMK 450K</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="analytics">
+            <div id="goals">
+              <p id="gl-title">
+                Plan<span class="plus"><i class="bx bxs-plus-circle"></i></span>
+              </p>
+              <div id="goal-bx">
+                <div class="gl-card" id="profit">
+                  <div class="gl-cd-top">
+                    <h1>MMK 250K</h1>
+                    <p>05/04/2021</p>
                   </div>
-                  <div class="card-body">
-                    <canvas id="myBarChart" width="100%" height="40"></canvas>
+                  <div class="gl-cd-bottom">
+                    <i class="bx bx-traffic-cone"></i>
+                    <p>Profit</p>
+                  </div>
+                </div>
+                <div class="gl-card" id="reno">
+                  <div class="gl-cd-top">
+                    <h1>MMK 100K</h1>
+                    <p>05/04/2021</p>
+                  </div>
+                  <div class="gl-cd-bottom">
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    <p>Renovation</p>
+                  </div>
+                </div>
+                <div class="gl-card" id="activity">
+                  <div class="gl-cd-top">
+                    <h1>MMK 150K</h1>
+                    <p>05/04/2021</p>
+                  </div>
+                  <div class="gl-cd-bottom">
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    <p>Employee Activities</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="outcome-statistics">
+              <p id="o-s-title">Outcome Statistics</p>
+              <div id="line-row">
+                <div id="fst-line" class="lines">
+                  <span class="l-r-icon"><i class="bx bx-cart"></i></span>
+                  <div class="l-r-line-row">
+                    <div class="l-r-line"></div>
+                    <p>Cargo Import</p>
+                  </div>
+                  <p class="num">29%</p>
+                </div>
+                <div id="sec-line" class="lines">
+                  <span class="l-r-icon"><i class="bx bxs-truck"></i></span>
+                  <div class="l-r-line-row">
+                    <div class="l-r-line"></div>
+                    <p>Extra Fees</p>
+                  </div>
+                  <p class="num">12%</p>
+                </div>
+                <div id="three-line" class="lines">
+                  <span class="l-r-icon"
+                    ><i class="bx bxs-badge-dollar"></i
+                  ></span>
+                  <div class="l-r-line-row">
+                    <div class="l-r-line"></div>
+                    <p>Salaries</p>
+                  </div>
+                  <p class="num">60%</p>
+                </div>
+              </div>
+            </div>
+            <div id="new-transaction">
+              <div id="user-name">
+                <h2>Top Customers</h2>
+                <div id="user-img">
+                  <div class="u-img-bx">
+                    <span class="img-bx">
+                      <img src="../images/Red.jpg" alt="User img" />
+                    </span>
+                    <p>Red</p>
+                  </div>
+                  <div class="u-img-bx">
+                    <span class="img-bx">
+                      <img src="../images/Blue.jpg" alt="User img" />
+                    </span>
+                    <p>Blue</p>
+                  </div>
+                  <div class="u-img-bx">
+                    <span class="img-bx">
+                      <img src="../images/Green.jpg" alt="User img" />
+                    </span>
+                    <p>Green</p>
+                  </div>
+                  <div class="u-img-bx">
+                    <span class="img-bx">
+                      <img src="../images/Yellow.jpg" alt="User img" />
+                    </span>
+                    <p>Yellow</p>
+                  </div>
+                  <div class="u-img-bx">
+                    <span class="img-bx">
+                      <img src="../images/Pink.jpg" alt="User img" />
+                    </span>
+                    <p>Pink</p>
+                  </div>
+                  <div class="u-img-bx">
+                    <span class="img-bx">
+                      <img src="../images/Omega.jpg" alt="User img" />
+                    </span>
+                    <p>Omega</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </main>
-        <footer class="py-4 bg-light mt-auto"
-        style="background-color: #dfe0d4 !important;">
-          <div class="container-fluid px-4"
-          >
-            <div
-              class="d-flex align-items-center justify-content-between small"
-            >
-              <div class="text-muted">Copyright &copy; Your Website 2023</div>
-              <div class="text-muted">
-                <a href="#" style="color:#988784;">Privacy Policy</a>
-                &middot;
-                <a href="#" style="color:#988784;">Terms &amp; Conditions</a>
-              </div>
-            </div>
-          </div>
-        </footer>
+        </div>
       </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/datatables-simple-demo.js"></script>
-      <script>
-  var icon = document.getElementById("icon");
-  icon.onclick=function(){
-    document.body.classList.toggle("dark-mode");
-    if(document.body.classList.contains("dark-mode")){
-      icon.src="../images/sun.png";
-    }
-    else{
-      icon.src="../images/moon.png";
-    }
-  }
-  </script>
+    </section>
   </body>
 </html>

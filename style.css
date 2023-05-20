@@ -88,18 +88,21 @@ header {
 .nav-link {
   font-family: "Poppins", sans-serif !important;
   color: var(--second-color) !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
 }
 .dropdown-item {
   font-family: "Poppins", sans-serif !important;
   color: #353940 !important;
-  font-size: 15px;
+  font-size: 13px;
 }
 #searchbar {
   font-family: "Poppins", sans-serif !important;
+  width: auto;
+  height: 30px;
 }
 #searchbutton {
   color: white;
+  font-size: 15px;
 }
 #searchbutton:hover {
   background-color: #353940 !important;
@@ -266,7 +269,7 @@ ul {
   padding: 0 15px;
 }
 .footer-col h4 {
-  font-size: 18px;
+  font-size: 15px;
   color: #bbbbbb;
   text-transform: capitalize;
   margin-bottom: 35px;
@@ -287,7 +290,7 @@ ul {
   margin-bottom: 10px;
 }
 .footer-col ul li a {
-  font-size: 16px;
+  font-size: 11px;
   text-transform: capitalize;
   color: var(--first-color);
   text-decoration: none;

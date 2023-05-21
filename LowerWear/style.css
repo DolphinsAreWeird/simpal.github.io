@@ -171,31 +171,33 @@ ul {
   .text-area {
     display: block;
   }
-  img {
-    width: 50% !important;
-    margin: 5px;
-  }
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+  .logo {
+    width: 7%;
+    height: 7%;
+  }
+  #icon {
+    width: 7% !important;
+    height: 7%  !important;
   }
 }
 @media (max-width: 574px) {
   .text-area {
     display: block;
   }
-  img {
-    width: 30% !important;
-    height: 20%;
-    margin: 5px;
-  }
-  .card {
-    position: relative;
-    width: 400px;
-    display: inline-block;
-  }
   .footer-col {
     width: 100%;
+  }
+  .logo {
+    width: 7%;
+    height: 7%;
+  }
+  #icon {
+    width: 7% !important;
+    height: 7% !important;
   }
 }
 /* scroll bar style */

@@ -117,7 +117,10 @@ header {
 /* popular items margin and cards */
 #pop-title {
   color: var(--second-color);
-  margin-left: 100px;
+  margin-left: 30px;
+  padding-top: 7vh;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
 }
 
 #pop-items {
@@ -327,31 +330,33 @@ ul {
   .text-area {
     display: block;
   }
-  img {
-    width: 50% !important;
-    margin: 5px;
-  }
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+  .logo {
+    width: 7%;
+    height: 7%;
+  }
+  #icon {
+    width: 7% !important;
+    height: 7%  !important;
   }
 }
 @media (max-width: 574px) {
   .text-area {
     display: block;
   }
-  img {
-    width: 30% !important;
-    height: 20%;
-    margin: 5px;
-  }
-  .card {
-    position: relative;
-    width: 400px;
-    display: inline-block;
-  }
   .footer-col {
     width: 100%;
+  }
+  .logo {
+    width: 7%;
+    height: 7%;
+  }
+  #icon {
+    width: 7% !important;
+    height: 7% !important;
   }
 }
 /* DARK MODE */

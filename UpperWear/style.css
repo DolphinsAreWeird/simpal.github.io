@@ -67,8 +67,8 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
-.card-text{
-  font-family: 'Jost', sans-serif;
+.card-text {
+  font-family: "Jost", sans-serif;
 }
 
 svg {
@@ -171,31 +171,33 @@ ul {
   .text-area {
     display: block;
   }
-  img {
-    width: 50% !important;
-    margin: 5px;
-  }
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+  .logo {
+    width: 7%;
+    height: 7%;
+  }
+  #icon {
+    width: 7% !important;
+    height: 7%  !important;
   }
 }
 @media (max-width: 574px) {
   .text-area {
     display: block;
   }
-  img {
-    width: 30% !important;
-    height: 20%;
-    margin: 5px;
-  }
-  .card {
-    position: relative;
-    width: 400px;
-    display: inline-block;
-  }
   .footer-col {
     width: 100%;
+  }
+  .logo {
+    width: 7%;
+    height: 7%;
+  }
+  #icon {
+    width: 7% !important;
+    height: 7% !important;
   }
 }
 /* scroll bar style */
@@ -226,7 +228,7 @@ ul {
   color: var(--second-color);
 }
 .card {
-/*   Add shadows to create the "card" effect / */
+  /*   Add shadows to create the "card" effect / */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
@@ -234,7 +236,7 @@ ul {
 /* / On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}]
+}
 .centered-button {
   display: flex;
   align-items: center;

@@ -78,11 +78,12 @@ header {
 }
 #searchbutton {
   color: white;
+  font-size: 15px;
+  text-align: center;
 }
 #searchbutton:hover {
   background-color: #353940 !important;
 }
-
 /* scroll bar style */
 ::-webkit-scrollbar {
   width: 8px;
@@ -178,37 +179,33 @@ ul {
   .text-area {
     display: block;
   }
-  img {
-    width: 50% !important;
-    margin: 5px;
-  }
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+  .logo {
+    width: 7%;
+    height: 7%;
+  }
+  #icon {
+    width: 7% !important;
+    height: 7% !important;
   }
 }
 @media (max-width: 574px) {
   .text-area {
     display: block;
   }
-  img {
-    width: 100% !important;
-    margin: 5px;
-  }
-
   .footer-col {
     width: 100%;
   }
-}
-
-@media (max-width: 600px) {
-  .text-area {
-    display: block;
+  .logo {
+    width: 7%;
+    height: 7%;
   }
-  img {
-    width: 30% !important;
-    height: 20%;
-    margin: 5px;
+  #icon {
+    width: 7% !important;
+    height: 7% !important;
   }
 }
 .div-height {

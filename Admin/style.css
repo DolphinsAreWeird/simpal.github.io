@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   min-width: max-content;
   background: transparent;
-  background-color: #a7d2cb;
+  background-color: var(--first-color);
 }
 ul {
   list-style: none;

@@ -7,6 +7,16 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+:root {
+  --first-color: #dfe0d4;
+  --second-color: #353940;
+  --third-color: #fff;
+}
+.dark-mode {
+  --first-color: #202124;
+  --second-color: #dfe0d4;
+  --third-color: #585151;
+}
 body {
   min-height: 100vh;
   min-width: max-content;

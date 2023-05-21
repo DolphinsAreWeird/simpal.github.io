@@ -32,15 +32,13 @@ header {
   background-color: var(--first-color);
 }
 
-
 /* main intro text */
-.text-area {
-  padding-top: 250px;
-  max-width: 400px;
+#text-area {
+  margin-top: 250px;
   text-align: justify;
   color: var(--second-color);
 }
-.text-area h4 {
+#text-area h4 {
   font-size: 50px;
   margin-bottom: 20px;
   color: #3e92a3;
@@ -55,16 +53,8 @@ header {
 }
 
 /* image sizing */
-.user-area {
-  position: absolute;
-  top: 20%;
-  right: 20%;
-}
-.user-area img {
-  display: block;
-  width: 700px;
-  padding-top: 80px;
-  padding-left: 150px;
+#user-area {
+  margin-top: 250px;
 }
 
 /* logo */
@@ -95,11 +85,12 @@ header {
 #searchbar {
   font-family: "Poppins", sans-serif !important;
   width: auto;
-  height: 30px;
+  /* height: 30px; */
 }
 #searchbutton {
   color: white;
   font-size: 15px;
+  text-align: center;
 }
 #searchbutton:hover {
   background-color: #353940 !important;

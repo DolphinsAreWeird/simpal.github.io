@@ -52,7 +52,7 @@ body {
 #searchbar {
   font-family: "Poppins", sans-serif !important;
   width: auto;
-  height: 30px;
+  /* height: 30px; */
 }
 #searchbutton {
   color: white;

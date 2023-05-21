@@ -79,7 +79,7 @@ a {
   padding-left: 5px;
   font-size: 18px;
   font-weight: 500;
-  color: #3e92a3;
+  color: var(--second-color);
   font-family: "Bruno Ace SC", cursive;
 }
 #nav-ul li {
@@ -90,9 +90,9 @@ a {
   display: flex;
   align-items: center;
 }
-#nav-ul li:hover {
+/* #nav-ul li:hover {
   background-color: #eff7ff;
-}
+} */
 #nav-ul li a {
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@ a {
   padding: 0 3px;
   display: flex;
   align-items: center;
-  color: black;
+  color: var(--second-color);
 }
 .nav-icon i {
   font-size: 22px;
@@ -115,7 +115,7 @@ a {
 }
 .nav-letter {
   padding-left: 7px;
-  color: black;
+  color: var(--second-color);
   font-size: 15px;
 }
 #nav-bottom {
@@ -187,7 +187,7 @@ a {
   font-size: 15px;
   line-height: 15px;
   margin-left: 5px;
-  color: gray;
+  color: var(--second-color);
 }
 #profile-ac-name p span {
   font-weight: 700;
@@ -200,6 +200,7 @@ a {
   position: relative;
   width: 600px;
   min-height: 350px;
+  color: var(--second-color);
   background-color: var(--third-color);
   padding: 10px 25px 10px 20px;
   margin: 0 25px 23px 0;
@@ -383,6 +384,7 @@ a {
 #transaction-list {
   position: relative;
   width: 600px;
+  color: var(--second-color);
   background-color: var(--third-color);
   padding: 14px 25px 25px 20px;
   border-radius: 25px;
@@ -431,6 +433,7 @@ tr td:nth-child(1) i {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  color: var(--second-color);
 }
 .plus {
   display: flex;
@@ -453,6 +456,7 @@ tr td:nth-child(1) i {
   height: 140px;
   margin-right: 12px;
   padding: 10px 15px;
+  color: var(--second-color);
   background-color:var(--third-color);
   border-radius: 20px;
 }
@@ -487,6 +491,9 @@ tr td:nth-child(1) i {
 
 .gl-cd-bottom {
   line-height: 20px;
+}
+#o-s-title{
+    color:var(--second-color);
 }
 #line-row {
   position: relative;
@@ -524,6 +531,7 @@ tr td:nth-child(1) i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: var(--second-color);
   margin-top: 8px;
 }
 .l-r-line {
@@ -567,6 +575,7 @@ tr td:nth-child(1) i {
 }
 .num {
   font-size: 18px;
+  color: var(--second-color);
 }
 #new-transaction {
   position: relative;
@@ -617,3 +626,4 @@ tr td:nth-child(1) i {
   width: 22px;
   cursor: pointer;
 }
+    

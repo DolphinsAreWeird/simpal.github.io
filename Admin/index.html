@@ -66,6 +66,12 @@
                 <span class="nav-letter">Settings</span>
               </a>
             </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><img src="../images/moon.png" id="icon"></i></span>
+                <span class="nav-letter">Dark Mode</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div id="nav-bottom">
@@ -308,5 +314,17 @@
         </div>
       </div>
     </section>
+    <script>
+  var icon = document.getElementById("icon");
+  icon.onclick=function(){
+    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.contains("dark-mode")){
+      icon.src="../images/sun.png";
+    }
+    else{
+      icon.src="../images/moon.png";
+    }
+  }
+  </script>
   </body>
 </html>

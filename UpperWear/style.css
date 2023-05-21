@@ -37,12 +37,15 @@ body {
   width: 10%;
   height: 10%;
 }
-
 /* navbar */
 .nav-link {
   font-family: "Poppins", sans-serif !important;
   color: var(--second-color) !important;
-  font-size: 15px !important;
+  font-size: 16px !important;
+}
+.nav-item {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .dropdown-item {
   font-family: "Poppins", sans-serif !important;
@@ -57,6 +60,7 @@ body {
 #searchbutton {
   color: white;
   font-size: 15px;
+  text-align: center;
 }
 #searchbutton:hover {
   background-color: #353940 !important;

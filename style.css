@@ -199,6 +199,7 @@ header {
 
 .feedback-text {
   margin: 10px;
+  text-align: justify;
 }
 
 .feedback-text h3 {

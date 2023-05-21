@@ -68,19 +68,16 @@ a {
   margin-bottom: 25px;
   display: flex;
   align-items: center;
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3e92a3;
+  font-family: "Bruno Ace SC", cursive;
 }
 
 #logo {
   width: 20%;
   height: 20%;
-}
-
-#nav-title span:nth-child(2) {
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--second-color);
-  font-family: "Bruno Ace SC", cursive;
 }
 #nav-ul li {
   position: relative;
@@ -457,7 +454,7 @@ tr td:nth-child(1) i {
   margin-right: 12px;
   padding: 10px 15px;
   color: var(--second-color);
-  background-color:var(--third-color);
+  background-color: var(--third-color);
   border-radius: 20px;
 }
 .gl-card:nth-child(3) {
@@ -492,8 +489,8 @@ tr td:nth-child(1) i {
 .gl-cd-bottom {
   line-height: 20px;
 }
-#o-s-title{
-    color:var(--second-color);
+#o-s-title {
+  color: var(--second-color);
 }
 #line-row {
   position: relative;
@@ -626,4 +623,3 @@ tr td:nth-child(1) i {
   width: 22px;
   cursor: pointer;
 }
-    

@@ -144,13 +144,12 @@ header {
   margin-left: 20px;
   margin-top: 0;
 }
-.text{
- font-family: 'Ubuntu', sans-serif;
+.text {
+  font-family: "Ubuntu", sans-serif;
 }
-.title-color{
- color: #3e92a3;
+.title-color {
+  color: #3e92a3;
 }
-
 
 .underline {
   text-decoration: none;
@@ -199,6 +198,7 @@ header {
 
 .feedback-text {
   margin: 10px;
+  text-align: justify;
 }
 
 .feedback-text h3 {

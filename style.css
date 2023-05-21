@@ -151,6 +151,9 @@ header {
 .text{
  font-family: 'Ubuntu', sans-serif;
 }
+.title-color{
+ color: #3e92a3;
+}
 
 
 .underline {

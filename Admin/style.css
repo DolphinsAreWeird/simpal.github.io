@@ -611,3 +611,9 @@ tr td:nth-child(1) i {
 .u-img-bx p {
   font-size: 11px;
 }
+/* DARK MODE */
+#icon {
+  margin-right: 15px;
+  width: 30px;
+  cursor: pointer;
+}

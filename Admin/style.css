@@ -7,11 +7,21 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+:root {
+  --first-color: #dfe0d4;
+  --second-color: #353940;
+  --third-color: #fff;
+}
+.dark-mode {
+  --first-color: #202124;
+  --second-color: #f6f6f6;
+  --third-color: #585151;
+}
 body {
   min-height: 100vh;
   min-width: max-content;
   background: transparent;
-  background-color: #a7d2cb;
+  background-color: var(--first-color);
 }
 ul {
   list-style: none;
@@ -190,7 +200,7 @@ a {
   position: relative;
   width: 600px;
   min-height: 350px;
-  background-color: #585151;
+  background-color: var(--third-color);
   padding: 10px 25px 10px 20px;
   margin: 0 25px 23px 0;
   border-radius: 25px;
@@ -373,7 +383,7 @@ a {
 #transaction-list {
   position: relative;
   width: 600px;
-  background-color: #585151;
+  background-color: var(--third-color);
   padding: 14px 25px 25px 20px;
   border-radius: 25px;
 }
@@ -443,7 +453,7 @@ tr td:nth-child(1) i {
   height: 140px;
   margin-right: 12px;
   padding: 10px 15px;
-  background-color: #585151;
+  background-color:var(--third-color);
   border-radius: 20px;
 }
 .gl-card:nth-child(3) {
@@ -499,15 +509,15 @@ tr td:nth-child(1) i {
   border-radius: 15px;
 }
 .lines:nth-child(1) span {
-  background-color: #585151;
+  background-color: var(--third-color);
   color: #ff5335;
 }
 .lines:nth-child(2) span {
-  background-color: #585151;
+  background-color: var(--third-color);
   color: #3e92a3;
 }
 .lines:nth-child(3) span {
-  background-color: #585151;
+  background-color: var(--third-color);
   color: #ea047e;
 }
 .l-r-line-row {
@@ -570,8 +580,8 @@ tr td:nth-child(1) i {
   height: 170px;
   padding: 30px;
   border-radius: 15px;
-  background-color: #353940;
-  color: white;
+  background-color: var(--third-color);
+  color: var(--second-color);
 }
 
 #user-name h2 {
@@ -600,4 +610,10 @@ tr td:nth-child(1) i {
 }
 .u-img-bx p {
   font-size: 11px;
+}
+/* DARK MODE */
+#icon {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
 }

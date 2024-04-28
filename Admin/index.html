@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simpal Admins Hub</title>
-    <link rel="icon" type="images/x-icon" href="../images/Logo-final.png" />
+    <link rel="icon" type="images/x-icon" href="images/Logo-final.png" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -21,17 +21,23 @@
       @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro+Titling&family=Kanit:wght@300&family=Open+Sans:wght@600&family=Poppins&display=swap");
     </style>
   </head>
+
   <body>
+    <!-- linking d3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
     <section id="main">
-      <!--   <div id="border"></div> -->
+
+      <!-- the left panel -->
       <div id="left">
         <div id="nav-content">
           <div id="nav-title">
             <a id="nav-title" href="index.html">          
-              <img src="../images/Logo-final.png" alt="" id="logo" />
+              <img src="images/Logo-final.png" alt="" id="logo" />
               Simpal</a>
               </div>
 
+          <!-- the menu list -->
           <ul id="nav-ul">
             <li>
               <a href="#">
@@ -71,18 +77,22 @@
             </li>
             <li>
               <a href="#">
-                <span class="nav-icon"><img src="../images/moon.png" id="icon"></i></span>
+                <span class="nav-icon"><img src="images/moon.png" id="icon"></i></span>
                 <span class="nav-letter" id="iconl"> Dark Mode</span>
               </a>
             </li>
           </ul>
         </div>
+
+        <!-- bottom left nav panel -->
         <div id="nav-bottom">
           <div id="n-b-top">
             <p class="nav-letter">Logged&nbsp;in&nbsp;As: &nbsp;ADMIN 1</p>
           </div>
         </div>
       </div>
+
+      <!-- top menu, title -->
       <div id="right">
         <div id="top">
           <div id="tp-title">
@@ -98,10 +108,14 @@
             </div>
           </div>
         </div>
+
+
         <div id="main-content">
           <div id="m-c-left">
             <div id="card">
               <h2>Cards</h2>
+
+              <!-- the bank card portion , d3 not included -->
               <div id="card-related">
                 <div class="card-amount">
                   <div id="debit-card">
@@ -152,6 +166,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- the transactions, d3 not included -->
             <div id="transaction-list">
               <h2>Transaction</h2>
               <table>
@@ -201,6 +217,8 @@
               </table>
             </div>
           </div>
+
+          <!-- goals analytics, d3 not included -->
           <div id="analytics">
             <div id="goals">
               <p id="gl-title">
@@ -239,105 +257,141 @@
                 </div>
               </div>
             </div>
+
+            <!-- outcome statistics, d3 included -->
             <div id="outcome-statistics">
               <p id="o-s-title">Outcome Statistics</p>
-              <div id="line-row">
-                <div id="fst-line" class="lines">
-                  <span class="l-r-icon"><i class="bx bx-cart"></i></span>
-                  <div class="l-r-line-row">
-                    <div class="l-r-line"></div>
-                    <p>Cargo Import</p>
-                  </div>
-                  <p class="num">29%</p>
-                </div>
-                <div id="sec-line" class="lines">
-                  <span class="l-r-icon"><i class="bx bxs-truck"></i></span>
-                  <div class="l-r-line-row">
-                    <div class="l-r-line"></div>
-                    <p>Extra Fees</p>
-                  </div>
-                  <p class="num">12%</p>
-                </div>
-                <div id="three-line" class="lines">
-                  <span class="l-r-icon"
-                    ><i class="bx bxs-badge-dollar"></i
-                  ></span>
-                  <div class="l-r-line-row">
-                    <div class="l-r-line"></div>
-                    <p>Salaries</p>
-                  </div>
-                  <p class="num">60%</p>
-                </div>
-              </div>
-            </div>
+              <div id="line-row"></div>
+            </div>            
+
+            <script src="https://d3js.org/d3.v7.min.js"></script>
+            <script>
+              // Sampling the data for outcome statistics
+              const outcomeStatistics = [
+                { icon: "bx bx-cart", percentage: "29%" },
+                { icon: "bx bxs-truck", percentage: "12%" },
+                { icon: "bx bxs-badge-dollar", percentage: "60%" }
+              ];
+
+              // Selecting the container for outcome statistics
+              const lineRow = d3.select("#line-row");
+
+              // Bind data to DOM elements
+              const lines = lineRow
+                .selectAll(".lines")
+                .data(outcomeStatistics)
+                .enter()
+                .append("div")
+                .attr("class", "lines");
+
+              // Append icon and percentage
+              lines.append("span")
+                .attr("class", "l-r-icon")
+                .html(d => `<i class="${d.icon}"></i>`);
+
+              lines.append("div")
+                .attr("class", "l-r-line-row")
+                .append("div")
+                .attr("class", "l-r-line")
+                .append("p")
+                // .text(d => d.text);
+
+              lines.append("p")
+                .attr("class", "num")
+                .text(d => d.percentage);
+            </script>
+
+
+            <!-- top customers, d3 included -->
             <div id="new-transaction">
               <div id="user-name">
                 <h2>Top Customers</h2>
-                <div id="user-img">
-                  <div class="u-img-bx">
-                    <span class="img-bx">
-                      <img src="../images/Red.jpg" alt="User img" />
-                    </span>
-                    <p>Red</p>
-                  </div>
-                  <div class="u-img-bx">
-                    <span class="img-bx">
-                      <img src="../images/Blue.jpg" alt="User img" />
-                    </span>
-                    <p>Blue</p>
-                  </div>
-                  <div class="u-img-bx">
-                    <span class="img-bx">
-                      <img src="../images/Green.jpg" alt="User img" />
-                    </span>
-                    <p>Green</p>
-                  </div>
-                  <div class="u-img-bx">
-                    <span class="img-bx">
-                      <img src="../images/Yellow.jpg" alt="User img" />
-                    </span>
-                    <p>Yellow</p>
-                  </div>
-                  <div class="u-img-bx">
-                    <span class="img-bx">
-                      <img src="../images/Pink.jpg" alt="User img" />
-                    </span>
-                    <p>Pink</p>
-                  </div>
-                  <div class="u-img-bx">
-                    <span class="img-bx">
-                      <img src="../images/Omega.jpg" alt="User img" />
-                    </span>
-                    <p>Omega</p>
-                  </div>
-                </div>
+                <div id="user-img"></div>
               </div>
-            </div>
+
+              <script>
+                // Sampling data for top customers
+                const topCustomers = [
+                  { name: "Red", image: "images/Red.jpg" },
+                  { name: "Blue", image: "images/Blue.jpg" },
+                  { name: "Green", image: "images/Green.jpg" },
+                  { name: "Yellow", image: "images/Yellow.jpg" },
+                  { name: "Pink", image: "images/Pink.jpg" },
+                  { name: "Omega", image: "images/Omega.jpg" }
+                ];
+
+                const userImgContainer = d3.select("#user-img");
+
+                // Bind data to DOM elements
+                const users = userImgContainer
+                  .selectAll(".u-img-bx")
+                  .data(topCustomers)
+                  .enter()
+                  .append("div")
+                  .attr("class", "u-img-bx");
+
+                // Append user images and names
+                users.append("span")
+                  .attr("class", "img-bx")
+                  .html(d => `<img src="${d.image}" alt="User img" />`);
+
+                users.append("p")
+                  .text(d => d.name);
+              </script>
+
+              <!-- dark mode and icon switching -->
+              <!-- reference: https://youtu.be/9LZGB3OLXNQ?si=_-5UutobAUwYoQJO -->
+              <script>
+                var icon = document.getElementById("icon");
+                icon.onclick=function(){
+                  document.body.classList.toggle("dark-mode");
+                  if(document.body.classList.contains("dark-mode")){
+                    icon.src="images/sun.png";
+                  }
+                  else{
+                    icon.src="images/moon.png";
+                  }
+                }
+                var icon = document.getElementById("icon");
+                iconl.onclick=function(){
+                  document.body.classList.toggle("dark-mode");
+                  if(document.body.classList.contains("dark-mode")){
+                    icon.src="images/sun.png";
+                  }
+                  else{
+                    icon.src="images/moon.png";
+                  }
+                }
+              </script>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- dark mode and icon switching -->
+    <!-- reference: https://youtu.be/9LZGB3OLXNQ?si=_-5UutobAUwYoQJO -->
     <script>
-  var icon = document.getElementById("icon");
-  icon.onclick=function(){
-    document.body.classList.toggle("dark-mode");
-    if(document.body.classList.contains("dark-mode")){
-      icon.src="../images/sun.png";
-    }
-    else{
-      icon.src="../images/moon.png";
-    }
-  }
-  var icon = document.getElementById("icon");
-  iconl.onclick=function(){
-    document.body.classList.toggle("dark-mode");
-    if(document.body.classList.contains("dark-mode")){
-      icon.src="../images/sun.png";
-    }
-    else{
-      icon.src="../images/moon.png";
-    }
-  }
-  </script>
+      var icon = document.getElementById("icon");
+      icon.onclick=function(){
+        document.body.classList.toggle("dark-mode");
+        if(document.body.classList.contains("dark-mode")){
+          icon.src="images/sun.png";
+        }
+        else{
+          icon.src="images/moon.png";
+        }
+      }
+      var icon = document.getElementById("icon");
+      iconl.onclick=function(){
+        document.body.classList.toggle("dark-mode");
+        if(document.body.classList.contains("dark-mode")){
+          icon.src="images/sun.png";
+        }
+        else{
+          icon.src="images/moon.png";
+        }
+      }
+    </script>
+
   </body>
 </html>
